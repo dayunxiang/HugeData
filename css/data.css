@@ -1,0 +1,89 @@
+*{font-family: verdana,微软雅黑;}
+.clearfix{zoom:1;}
+.clearfix:after{content: "";display: inline-block;clear:both;}
+.cell{display: table-cell;width: 9999px;*display:inline-block;*width:auto;}
+.fl{float: left;}
+.fr{float: right;}
+.container{background: url("../sxImags/sx-bg-nomap.jpg") no-repeat;width: 2432px;height: 1344px;margin:0 auto;position: relative;}
+/*上部*/
+.top{position: absolute;height: 50px;top:87px;width: 100%;}
+.top_left,.top_right{position: absolute;height: 50px;line-height: 50px;width: 250px;font-size: 22px;text-align: center;font-weight:700;
+    background: linear-gradient(to right,#92c9f1,#fff,#92c9f1);-webkit-background-clip: text;color:transparent;}
+.top_left{left: 489px;}
+.top_right{right:360px;}
+/*中间部分*/
+.center{position: absolute;left: 801px;top:149px;width: 1080px;}
+.center_top{width: 832px;text-align: center;}
+.expiration{font-size: 20px;line-height: 56px;color: #73cbfc;letter-spacing: .2em;}
+.center .data{margin:20px 13px;}
+.data tr{line-height: 50px;}
+.data tr td:nth-child(1){width: 114px;padding:0 49px;}
+.data tr td:nth-child(2){width: 168px;}
+.data tr td:nth-child(3){width: 115px;padding:0 51px;}
+.data tr td:nth-child(4){width: 213px;}
+.data tr td:nth-child(2n+1){font-size: 16px;text-align: justify;text-justify: distribute-all-lines;text-align-last: justify;color: #b2e1fe;}
+.data tr td:nth-child(2n){font-size: 16px;text-align: left;color: #fff9b3;}
+.center .center_bottom{position: absolute;top:262px;width: 100%;}
+/*左半部*/
+.left{position: absolute;left: 62px;top:177px;width:677px;padding-left:40px;}
+.topic{height:81px;line-height: 81px;}
+.listStyle{margin-right:15px;margin-bottom: 4px;}
+.topic img{vertical-align: middle;}
+.workEff ul{padding:11px 0 13px;}                      /*审批工作效能*/
+.workEff li{display: inline-block;margin-right:79px;margin-bottom: 33px;width: 250px;text-align: center;}
+li .effIcon{margin-right:11px;vertical-align: middle;}
+li .effInfo{display: inline-block;vertical-align: middle;text-align: left;}
+li .rate{margin-bottom: 10px;color:#fff799;font-size: 25px;}
+li .rateInfo{color:#fff;font-size: 18px;}
+li .small{font-size: 15px;}
+.workTrends .trends{width: 639px;font-size: 13px;}     /*办件动态*/
+.workTrends .trends tr{border:2px solid rgba(8,24,59,0.5);height: 44px;text-align: center;color:#bdcbec;}
+.trends tr:first-child{background-color: #0c163e;color:#60adfd;font-size: 15px;}
+.situation{}                                           /*进驻部门业务办理情况*/
+.topic .title{color: #fff;font-size: 25px;font-weight: 700;letter-spacing: 0.1em;}
+/*右半部*/
+.right{position: absolute;top:171px;right: 62px;width: 722px;padding:8px 0 0 36px;box-sizing: border-box;}
+.workHandle ul{padding-top: 11px;}                      /*业务办理情况汇总*/
+.workHandle .handle_main{width: 191px;height: 138px;border:1px solid rgba(255,255,255,0.1);padding:32px 0;box-sizing: border-box;text-align: center;margin-right: 25px;display: inline-block;}
+.handle_main .handle_num{font-size: 24px;margin-bottom: 18px;}
+.handle_main .handle_info{color: #fff;font-size:17px;}
+.textGreen{color:#00d384;}
+.textYellow{color:#ffe300;}
+.textBlue{color:#1ca5ff;}
+.workTop{padding-top: 11px;}                              /*业务办理情况TOP5*/
+li.topItem{padding:10px 0;}
+.graBg-purple{background: linear-gradient(to left,#8445e7,#5a5dff);}
+.layui-progress{background-color:rgba(2,96,194,0.3)}
+.workTop .layui-progress{width: 93%;text-align: right;float: right;margin-top: 5px;}
+.workTop .layui-progress-bar{border-top-left-radius: 0;border-bottom-left-radius: 0;height: 10px;}
+.workTop .topText{display: inline-block;width:10px;color:#60adfd;font-size: 12px;}
+.topItem .workName{color:rgba(255,255,255,0.5);font-size: 15px;position: absolute;top: -6px;right: 0;white-space: nowrap;}
+.satisfaction tr{border:1px solid #0a1026;}
+.satisfaction tr td{height: 22px;}
+.satisfaction tr td:nth-child(2n+1){background-color:#0a122e;color:#60adfd;font-size: 11px;}
+.satisfaction tr td:nth-child(2n){color: #fff;font-size: 12px;}
+.limitTime{margin-left: 259px;margin-top: 30px;position: relative;}/*业务平均办理时限统计*/
+.timeTop,.timeMiddle,.timeBottom{position:absolute;font-size: 23px;color: #fefefe;left: 189px;text-align: center;}
+.timeTop:after,.timeMiddle:after,.timeBottom:after{content: '(天)';display: block; font-size: 15px;}
+.limitTime .timeTop{top: 154px;}
+.limitTime .timeMiddle{top:261px;}
+.limitTime .timeBottom{top:401px;}
+.topLine,.middleLine,.bottomLine{position: absolute;width: 0;}
+.topLine{border-left: 2px solid #515764;top: 123px;left: 243px;height: 385px;}
+.topLine:before,.topLine:after,.middleLine:before,.middleLine:after,.bottomLine:before,.bottomLine:after{content: "";width: 10px;height: 2px;background-color: #424659;display: block;position: absolute;left: -6px;}
+.topLine:before{background-color: #515764;top:0;}
+.topLine:after{background-color: #515764;bottom: 0;}
+.middleLine{border-left: 2px solid #373833;top: 189px;height: 173px;left: 139px;}
+.middleLine:before{background-color: #373833;top:0;}
+.middleLine:after{background-color: #373833;bottom: 0;}
+.bottomLine{border-left: 2px solid #2a5168;height: 140px;top: 360px;left: 139px;}
+.bottomLine:before{background-color: #2a5168;top:0;}
+.bottomLine:after{background-color: #2a5168;bottom: 0;}
+.topMsg,.middleMsg,.bottomMsg{position: absolute;font-size: 18px;line-height: 23px;width: 75px;}
+.topMsg{color: #fefefe;top: 146px;left: 258px;}
+.middleMsg{color:#fccc00;top: 270px;left: 56px;}
+.bottomMsg{color:#1b9ff6;top: 410px;left: 56px;}
+#map{width: 1083px;height: 782px; margin-top:100px;margin-left: 20px;background: url(../sxImags/sx-map.png) no-repeat}
+#centerCircle,#sx{position: absolute;}
+#centerCircle{top: 449px;left: 430px;}
+#sx{font-size: 16px;color: #fff;top: 460px;left: 474px;}
