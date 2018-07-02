@@ -4,13 +4,13 @@
 .cell{display: table-cell;width: 9999px;*display:inline-block;*width:auto;}
 .fl{float: left;}
 .fr{float: right;}
-.container{background: url("../sxImags/sx-bg-nomap.jpg") no-repeat;width: 2432px;height: 1344px;margin:0 auto;position: relative;}
+.container{background: url("../sxImags/sx-bg-new.jpg") no-repeat;width: 2432px;height: 1344px;margin:0 auto;position: relative;}
 /*上部*/
 .top{position: absolute;height: 50px;top:87px;width: 100%;}
 .top_left,.top_right{position: absolute;height: 50px;line-height: 50px;width: 250px;font-size: 22px;text-align: center;font-weight:700;
     background: linear-gradient(to right,#92c9f1,#fff,#92c9f1);-webkit-background-clip: text;color:transparent;}
 .top_left{left: 489px;}
-.top_right{right:360px;}
+.top_right{right: 418px;width: 190px;}
 /*中间部分*/
 .center{position: absolute;left: 801px;top:149px;width: 1080px;}
 .center_top{width: 832px;text-align: center;}
@@ -39,6 +39,17 @@ li .small{font-size: 15px;}
 .workTrends .trends{width: 639px;font-size: 13px;}     /*办件动态*/
 .workTrends .trends tr{border:2px solid rgba(8,24,59,0.5);height: 44px;text-align: center;color:#bdcbec;}
 .trends tr:first-child{background-color: #0c163e;color:#60adfd;font-size: 15px;}
+.trends dl{background-color: #0c163e;color: #60adfd;font-size: 15px;height: 44px;line-height: 44px;text-align: center;}
+.trends dl dd{display: inline-block;}
+.trends dd:nth-child(1),.marquee li span:nth-child(1){width: 17px;}
+.trends dd:nth-child(2),.marquee li span:nth-child(2){width: 112px;}
+.trends dd:nth-child(3),.marquee li span:nth-child(3){width: 113px;}
+.trends dd:nth-child(4),.marquee li span:nth-child(4){width: 245px;}
+.trends dd:nth-child(5),.marquee li span:nth-child(5){width: 148px;}
+.trends .marquee{height: 264px;overflow: hidden;}
+.marquee ul{text-align: center;color: #bdcbec;height: 264px;}
+.marquee li{border: 2px solid rgba(8,24,59,0.5);border-top: 0;}
+.marquee li span{display: inline-block;height: 42px;line-height: 42px;}
 .situation{}                                           /*进驻部门业务办理情况*/
 .topic .title{color: #fff;font-size: 25px;font-weight: 700;letter-spacing: 0.1em;}
 /*右半部*/
