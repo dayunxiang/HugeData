@@ -114,7 +114,7 @@
             <ul>
                 <li class="handle_main">
                     <p class="handle_num textGreen">103</p>
-                    <p class="handle_info">本周累计办理</p>
+                    <p class="handle_info">累计办理</p>
                 </li>
                 <li class="handle_main">
                     <p class="handle_num textYellow">418</p>
@@ -343,6 +343,11 @@
         $(obj).animate({marginTop:"-23px"},500,function () {
             $(this).css("margin-top",0).find("li:first").appendTo(this);
         });
+    }
+    var isIE=navigator.userAgent.indexOf("Trident")>-1;  //是否IE内核
+    if(isIE){
+        $(".top_left").css({"background":"transparent","color":"#92c9f1"});
+        $(".top_right").css({"background":"transparent","color":"#92c9f1"});
     }
 </script>
 </body>
