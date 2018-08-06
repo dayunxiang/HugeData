@@ -1,0 +1,96 @@
+*{font-family: verdana,微软雅黑;}
+.clearfix{zoom:1;}
+.clearfix:after{content: "";display: inline-block;clear:both;}
+.cell{display: table-cell;width: 9999px;*display:inline-block;*width:auto;}
+.fl{float: left;}
+.fr{float: right;}
+.container{background: url("../sxImags2/sx-bg-nomap.png") no-repeat;width:4096px;height: 2160px;margin:0 auto;position: relative;}
+/*上部*/
+.top{position: absolute;height: 85px;top:121px;width: 100%;}
+.top_left,.top_right{position: absolute;height: 85px;line-height: 85px;width: 400px;font-size: 50px;text-align: center;font-weight:700;
+    background: linear-gradient(to right,#92c9f1,#fff,#92c9f1);-webkit-background-clip: text;color:transparent;}
+.top_left{left: 838px;}
+.top_right{right: 593px;width: 430px;}
+/*中间部分*/
+.center{position: absolute;left: 1346px;top:243px;}
+.center_top{width: 1426px;text-align: center;}
+.expiration{font-size: 34px;line-height: 94px;color: #73cbfc;letter-spacing: .2em;}
+.center .data{margin:18px 22px;}
+.data tr{line-height: 85px;}
+.data tr td:nth-child(1){width: 358px;padding:0 82px;}
+.data tr td:nth-child(2){width: 282px;}
+.data tr td:nth-child(3){width: 369px;padding:0 88px;}
+.data tr td:nth-child(4){width: 378px;}
+.data tr td:nth-child(2n+1){font-size: 30px;text-align: justify;text-justify: distribute-all-lines;text-align-last: justify;color: #b2e1fe;}
+.data tr td:nth-child(2n){font-size: 34px;text-align: left;color: #fff9b3;}
+.center .center_bottom{position: absolute;top:426px;width: 100%;}
+#map{width: 1781px;height: 1064px; margin-top:174px;margin-left: 29px;background: url(../sxImags2/sx-map.png) no-repeat}
+#centerCircle,#sx{position: absolute;}
+#centerCircle{top: 781px;left: 739px;}
+#sx{font-size: 28px;color: #fff;top: 789px;left: 797px;}
+/*左半部*/
+.left{position: absolute;left: 90px;top:277px;width:1222px;padding-left:70px;box-sizing: border-box;}
+.topic{height:134px;line-height: 134px;}
+.listStyle{margin-right:23px;}
+.topic img{vertical-align: middle;}
+.workEff ul{padding:19px 0;}                      /*审批工作效能*/
+.workEff li{display: inline-block;margin-right:53px;margin-bottom: 50px;width: 421px;text-align: center;}
+li .effIcon{margin-right:27px;vertical-align: middle;}
+li .effInfo{display: inline-block;vertical-align: middle;text-align: left;}
+li .rate{margin-bottom: 25px;color:#fff799;font-size: 34px;}
+li .rateInfo{color:#fff;font-size: 32px;}
+li .small{font-size: 24px;}
+.workTrends .trends{width: 1083px;font-size: 24px;}     /*办件动态*/
+/*.workTrends .trends tr{border:2px solid rgba(8,24,59,0.5);height: 71px;text-align: center;color:#bdcbec;}
+.trends tr:first-child{background-color: #0c163e;color:#60adfd;font-size: 15px;}*/
+.trends dl{background-color: #0c163e;color: #60adfd;font-size: 26px;height: 72px;line-height: 72px;text-align: center;}
+.trends dl dd{display: inline-block;}
+.trends dd:nth-child(1),.marquee li span:nth-child(1){width: 78px;}
+.trends dd:nth-child(2),.marquee li span:nth-child(2){width: 276px;}
+.trends dd:nth-child(3),.marquee li span:nth-child(3){width: 200px;}
+.trends dd:nth-child(4),.marquee li span:nth-child(4){width: 287px;}
+.trends dd:nth-child(5),.marquee li span:nth-child(5){width: 238px;}
+.trends .marquee{height: 624px;overflow: hidden;}
+.marquee ul{text-align: center;color: #bdcbec;height: 624px;}
+.marquee li{border: 2px solid rgba(8,24,59,0.5);border-top: 0;height: 73px;line-height: 73px}
+.marquee li span{display: inline-block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.situation{}                                           /*进驻部门业务办理情况*/
+.topic .title{color: #fff;font-size: 40px;font-weight: 700;letter-spacing: 0.1em;vertical-align: middle;}
+/*右半部*/
+.right{position: absolute;top:264px;right: 87px;width: 1224px;padding:18px 0 0 61px;box-sizing: border-box;}
+.workHandle ul{padding-top: 11px;}                      /*业务办理情况汇总*/
+.workHandle .handle_main{width: 322px;height: 236px;border:1px solid rgba(255,255,255,0.1);padding:53px 0;box-sizing: border-box;text-align: center;margin-right: 42px;display: inline-block;}
+.handle_main .handle_num{font-size: 40px;margin-bottom: 33px;}
+.handle_main .handle_info{color: #fff;font-size:29px;}
+.textGreen{color:#00d384;}
+.textYellow{color:#ffe300;}
+.textBlue{color:#1ca5ff;}
+.workTop{padding-top: 15px;}                              /*业务办理情况TOP5*/
+li.topItem{padding:24px 0;width: 1083px;}
+.graBg-purple{background: linear-gradient(to left,#8445e7,#5a5dff);}
+.layui-progress{background-color:rgba(2,96,194,0.3)}
+.workTop .layui-progress{width: 93%;text-align: right;float: right;height: 15px;}
+.workTop .layui-progress-bar{border-top-left-radius: 0;border-bottom-left-radius: 0;height: 17px;margin-top: -1px;}
+.workTop .topText{display: inline-block;width:10px;color:#60adfd;font-size: 16px;margin-top: -2px;}
+.topItem .workName{color:rgba(255,255,255,0.5);font-size: 27px;position: absolute;top: -1px;right: 0;white-space: nowrap;}
+.limitTime{margin-left: 499px;margin-top: 30px;position: relative;}/*业务平均办理时限统计*/
+.timeTop,.timeMiddle,.timeBottom{position:absolute;font-size: 33px;color: #fefefe;left: 261px;text-align: center;}
+.timeTop:after,.timeMiddle:after,.timeBottom:after{content: '(天)';display: block; font-size: 28px;}
+.limitTime .timeTop{top: 220px;}
+.limitTime .timeMiddle{top:402px;}
+.limitTime .timeBottom{top:627px;}
+.topLine,.middleLine,.bottomLine{position: absolute;width: 0;}
+.topLine{border-left: 2px solid #515764;top: 159px;left: 350px;height: 640px;}
+.topLine:before,.topLine:after,.middleLine:before,.middleLine:after,.bottomLine:before,.bottomLine:after{content: "";width: 14px;height: 2px;background-color: #424659;display: block;position: absolute;left: -8px;}
+.topLine:before{background-color: #515764;top:0;}
+.topLine:after{background-color: #515764;bottom: 0;}
+.middleLine{border-left: 2px solid #5a563b;top: 278px;height: 282px;left: 182px;}
+.middleLine:before{background-color: #5a563b;top:0;}
+.middleLine:after{background-color: #5a563b;bottom: 0;}
+.bottomLine{border-left: 2px solid #2a5168;height: 228px;top: 558px;left: 182px;}
+.bottomLine:before{background-color: #2a5168;top:0;}
+.bottomLine:after{background-color: #2a5168;bottom: 0;}
+.topMsg,.middleMsg,.bottomMsg{position: absolute;font-size: 31px;line-height: 31px;width: 124px;}
+.topMsg{color: #fefefe;top: 199px;left: 369px;}
+.middleMsg{color:#fccc00;top: 395px;left: 37px;}
+.bottomMsg{color:#1b9ff6;top: 651px;left: 37px;}
