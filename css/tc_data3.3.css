@@ -2,7 +2,7 @@
 .clearfix{zoom:1;}
 .clearfix:after{content: "";display: inline-block;clear:both;}
 .cell{display: table-cell;width: 9999px;*display:inline-block;*width:auto;}
-.container{background: url("../imags/bg_3.3_new.png") no-repeat;width: 1280px;height: 768px;margin:0 auto;position: relative;}
+.container{background: url("../imags/bg3_new.png") no-repeat;width: 1280px;height: 768px;margin:0 auto;position: relative;}
 /*上部*/
 .top{position: absolute;height: 220px;top:0;width: 100%;}
 .top_left,.top_right{position: absolute;top:45px;height: 27px;line-height: 27px;width: 107px;text-align: center;font-weight:700;
@@ -10,7 +10,7 @@
 .top_left{left: 266px;}
 .top_right{right:203px;}
 .center_top{position: absolute;top:84px;left:424px;width: 437px;text-align: center;}
-.expiration{font-size: 12px;line-height: 28px;color: #73cbfc;letter-spacing: .2em;}
+.expiration{font-size: 12px;line-height: 33px;color: #73cbfc;letter-spacing: .2em;}
 .middle_main .data{margin:20px 7px;}
 .data tr{line-height: 32px;}
 .data tr td:nth-child(1){width: 62px;padding:0 24px;}
@@ -20,13 +20,13 @@
 .data tr td:nth-child(2n+1){font-size: 11px;text-align: justify;text-justify: distribute-all-lines;text-align-last: justify;color: #b2e1fe;}
 .data tr td:nth-child(2n){font-size: 12px;text-align: left;color: #fff9b3;}
 /*左半部*/
-.left{position: absolute;left: 21px;top:90px;width:714px;padding-left:31px;}
+.left{position: absolute;left: 21px;top:65px;width:714px;padding-left:31px;}
 .topic{height:50px;line-height: 50px;}
 .topic .topic_name{color:#fff;font-size: 15px;font-weight: 700;padding-left: 7px;vertical-align: middle;letter-spacing: 0.09em;}
 .fl{float: left;}
 .fr{float: right;}
 .workEff{width: 387px;}
-.workEff li{display: inline-block;padding:0 20px;margin-right:44px;margin-bottom: 10px;width: 100px;}
+.workEff li{display: inline-block;padding:0 20px;margin-right:44px;margin-bottom: 13px;width: 100px;}
 li .effIcon{margin-right:8px;margin-top: 3px;}
 li .rate{margin-bottom: 3px;color:#fff799;font-size: 14px;}
 li .rateInfo{color:#fff;font-size: 11px;}
@@ -40,9 +40,9 @@ li .rateInfo{color:#fff;font-size: 11px;}
 .workTrends dd:nth-child(3),.marquee li span:nth-child(3){width: 184px;}
 .workTrends dd:nth-child(4),.marquee li span:nth-child(4){width: 100px;}
 .workTrends dd:nth-child(5),.marquee li span:nth-child(5){width: 100px;}
-.workTrends .marquee{height: 180px;overflow: hidden;}
+.workTrends .marquee{height: 210px;overflow: hidden;}
 .workTrends .marquee ul{color: rgba(255,255,255,0.9);font-size: 12px;width: 658px;height: 75px;border: 1px solid rgba(8,21,57,1);}
-.workTrends .marquee li{display: inline-block;text-align: center;border-bottom: 2px solid rgba(8,21,57,1);height: 23px;line-height: 23px;}
+.workTrends .marquee li{display: inline-block;text-align: center;border-bottom: 2px solid rgba(8,21,57,1);height: 27px;line-height: 27px;}
 .workTrends .marquee li span{display: inline-block;}
 .workTrends .trends{width: 450px;font-size: 12px;}
 .workTrends .trends tr{border:1px solid rgba(8,21,57,1);height: 23px;text-align: center;color:rgba(255,255,255,0.6);}
@@ -62,7 +62,8 @@ li .rateInfo{color:#fff;font-size: 11px;}
 .licenceLib .libMain{box-sizing: border-box;width: 91px;height:67px;background: linear-gradient(to left,rgba(1,104,240,0.1),rgba(29,75,158,0.1));padding:15px 0;display: inline-block;margin:0 5px 5px 0;text-align: center;}
 .libMain .libMain_num{color: #fff;font-size: 16px;}
 .libMain .libMain_info{color: #b2e1fe;font-size: 13px;}
-.right{position: absolute;top:90px;right: 34px;width: 494px;}
+/*右半部*/
+.right{position: absolute;top:65px;right: 34px;width: 494px;}
 .workHandle{margin-left: 134px;}
 .workHandle .handle_main{width: 100px;height: 73px;border:1px solid rgba(255,255,255,0.1);padding:18px 0;box-sizing: border-box;text-align: center;margin-right: 13px;display: inline-block;}
 .handle_main .handle_num{font-size: 16px;margin-bottom: 5px;}
@@ -70,7 +71,7 @@ li .rateInfo{color:#fff;font-size: 11px;}
 .textGreen{color:#00d384;}
 .textYellow{color:#ffe300;}
 .textBlue{color:#1ca5ff;}
-.workTop{padding:0 10px 9px 20px;}
+.workTop{padding:30px 10px 9px 20px;}
 .workTop .layui-progress-bar,.workTop .layui-progress{height: 13px;}
 .workTop ul li{height: 33px;}
 .graBg-purple{background: linear-gradient(to left,#8445e7,#5a5dff);}

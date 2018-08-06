@@ -103,14 +103,14 @@
         <!--各委办局的办件情况-->
         <div class="officeCase">
             <h1 class="topic"  style="height: 40px;line-height: 40px;margin-bottom: 10px;"><img src="imags/tc-topic.png" alt=""><span class="topic_name">窗口办件量TOP10</span></h1>
-            <div id="offCase" style="width: 640px;height: 137px;"></div>
+            <div id="offCase" style="width: 630px;height: 147px;"></div>
         </div>
     </div>
     <!--右半部-->
     <div class="right">
         <!--业务办理情况汇总-->
         <div class="workHandle">
-            <h1 class="topic"><img src="imags/tc-topic_05.png"/></h1>
+            <h1 class="topic" style="margin-bottom: 10px;"><img src="imags/tc-topic_05.png"/></h1>
             <ul>
                 <li class="handle_main">
                     <p class="handle_num textGreen">103</p>
@@ -201,7 +201,6 @@
     $(function () {
         var $topLeft=$(".top_left span");                 /*左上数字*/
         var $topRight=$(".top_right span");              /*右上数字*/
-        var $tds=$(".middle_main tr td:nth-child(2n)"); /*列表数字*/
         var $nums=$(".workHandle .handle_num");         /*业务办理情况*/
         var workName=document.getElementsByClassName('workName');
         var offCase=echarts.init(document.getElementById("offCase"));
@@ -330,17 +329,14 @@
         /*数字加逗号*/
         $topLeft.text(parseFloat($topLeft.text()).toLocaleString());
         $topRight.text(parseFloat($topRight.text()).toLocaleString());
-      /*  $tds.each(function () {
-            $(this).text(parseFloat($(this).text()).toLocaleString());
-        });*/
         $nums.each(function () {
             $(this).text(parseFloat($(this).text()).toLocaleString());
         });
         /*办件动态间歇滚动*/
-        setInterval("autoRoll('.marquee ul')",3000);
+        // setInterval("autoRoll('.marquee ul')",3000);
     });
     function autoRoll(obj) {
-        $(obj).animate({marginTop:"-23px"},500,function () {
+        $(obj).animate({marginTop:"-27px"},500,function () {
             $(this).css("margin-top",0).find("li:first").appendTo(this);
         });
     }
