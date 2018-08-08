@@ -65,7 +65,8 @@ li .rateInfo{color:#fff;font-size: 11px;}
 /*右半部*/
 .right{position: absolute;top:65px;right: 34px;width: 494px;}
 .workHandle{margin-left: 134px;}
-.workHandle .handle_main{width: 100px;height: 73px;border:1px solid rgba(255,255,255,0.1);padding:18px 0;box-sizing: border-box;text-align: center;margin-right: 13px;display: inline-block;}
+.workHandle .handle_main{width: 100px;height: 73px;border:1px solid rgba(255,255,255,0.1);padding:18px 0;box-sizing: border-box;text-align: center;margin-left: 60px;display: inline-block;}
+.workHandle .handle_main:first-child{margin-left: 21px;}
 .handle_main .handle_num{font-size: 16px;margin-bottom: 5px;}
 .handle_main .handle_info{color: #fff;font-size:12px;}
 .textGreen{color:#00d384;}

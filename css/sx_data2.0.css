@@ -40,16 +40,16 @@ li .effInfo{display: inline-block;vertical-align: middle;text-align: left;}
 li .rate{margin-bottom: 25px;color:#fff799;font-size: 34px;}
 li .rateInfo{color:#fff;font-size: 32px;}
 li .small{font-size: 24px;}
-.workTrends .trends{width: 1083px;font-size: 24px;}     /*办件动态*/
+.workTrends .trends{width: 1083px;font-size: 21px;}     /*办件动态*/
 /*.workTrends .trends tr{border:2px solid rgba(8,24,59,0.5);height: 71px;text-align: center;color:#bdcbec;}
 .trends tr:first-child{background-color: #0c163e;color:#60adfd;font-size: 15px;}*/
 .trends dl{background-color: #0c163e;color: #60adfd;font-size: 26px;height: 72px;line-height: 72px;text-align: center;}
 .trends dl dd{display: inline-block;}
 .trends dd:nth-child(1),.marquee li span:nth-child(1){width: 78px;}
-.trends dd:nth-child(2),.marquee li span:nth-child(2){width: 276px;}
-.trends dd:nth-child(3),.marquee li span:nth-child(3){width: 200px;}
-.trends dd:nth-child(4),.marquee li span:nth-child(4){width: 287px;}
-.trends dd:nth-child(5),.marquee li span:nth-child(5){width: 238px;}
+.trends dd:nth-child(2),.marquee li span:nth-child(2){width: 206px;}
+.trends dd:nth-child(3),.marquee li span:nth-child(3){width: 395px;}
+.trends dd:nth-child(4),.marquee li span:nth-child(4){width: 200px;}
+.trends dd:nth-child(5),.marquee li span:nth-child(5){width: 200px;}
 .trends .marquee{height: 624px;overflow: hidden;}
 .marquee ul{text-align: center;color: #bdcbec;height: 624px;}
 .marquee li{border: 2px solid rgba(8,24,59,0.5);border-top: 0;height: 73px;line-height: 73px}
