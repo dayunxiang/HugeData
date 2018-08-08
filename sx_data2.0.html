@@ -35,7 +35,7 @@
                     <tr>
                         <td>进驻单位</td>
                         <td>2.827116</td>
-                        <td>年度办件总数</td>
+                        <td>累计办件总数</td>
                         <td>578</td>
                     </tr>
                 </table>
@@ -43,7 +43,7 @@
         </div>
         <div class="center_bottom">  <!--地图-->
             <div id="map"></div>
-            <img src="sxImags2/sc-center.png" id="centerCircle"/><p id="sx">沙溪建成区</p>
+            <img src="sxImags2/sc-center.png" id="centerCircle"/><p id="sx">沙溪镇</p>
         </div>
     </div>
     <!--左半部-->
@@ -87,12 +87,12 @@
             <h1 class="topic"><img src="sxImags2/liststyle.png" class="listStyle"/><img src="sxImags2/topic-03.png"/></h1>
             <div class="trends">
                 <dl>
-                    <dd></dd><dd>申办主体</dd><dd>受理部门</dd><dd>受理事项</dd><dd>申报日期</dd>
+                    <dd></dd><dd>申办主体</dd><dd>受理事项</dd><dd>状态</dd><dd>申报日期</dd>
                 </dl>
                 <div class="marquee">
                     <ul>
-                        <li><span>1</span><span>张云秀</span><span>省教育厅</span><span>受理事项</span><span>2018-03-01</span></li>
-                        <li><span>2</span><span>李泽林</span><span>省教育厅</span><span>受理事项</span><span>2018-03-01</span></li>
+                        <li><span>1</span><span>张云秀</span><span>企业职工参保、减少申报</span><span>办结</span><span>2018-03-01</span></li>
+                        <li><span>2</span><span>李泽林</span><span>出具灵活就业人员养老保险、基本医疗保险</span><span>受理事项</span><span>2018-03-01</span></li>
                         <li><span>3</span><span>张云秀</span><span>省教育厅</span><span>受理事项</span><span>2018-03-01</span></li>
                         <li><span>4</span><span>王庆群</span><span>省教育厅</span><span>受理事项</span><span>2018-03-01</span></li>
                         <li><span>5</span><span>李泽林</span><span>省教育厅</span><span>受理事项</span><span>2018-03-01</span></li>
@@ -194,7 +194,6 @@
         var workName=document.getElementsByClassName('workName');  /* 业务Top5文字定位*/
         var leftSpan=$(".top_left span");           /*左上角数字*/
         var rightSpan=$(".top_right span");         /*右上角数字*/
-        var tds=$(".data tr td:nth-child(2n)");    /*列表数字*/
         var handleNum=$(".handle_main .handle_num");/*业务汇总数字*/
         var offCase=echarts.init(document.getElementById("offCase"));  /*进驻部门业务办理情况*/
         var limitTime=echarts.init(document.getElementById("3dBar")); /*3d柱状图*/
@@ -244,6 +243,7 @@
                     barGap: '-100%',
                     barWidth:15,
                     data: data,
+                    label:{show:true,fontSize:15},
                     itemStyle: {
                         normal: {
                             /*设置柱形颜色*/
@@ -261,39 +261,39 @@
             '沙溪建成区': [99.7865,21.8465],
             '香塘村': [123.0051,58.5539],
             '渠泾村': [105.6551,56.5539],
-            '归庄建成区': [104.3551,47.5539],
+            '归庄管理区': [104.3551,47.5539],
             '庄西村': [96.7551,43.0539],
             '项桥村': [79.3467,38.0899],
             '虹桥村': [64.0467,28.0899],
             '泰西村': [71.7865,19.1465],
             '泥桥村': [51.5467,12.9899],
-            '直塘建成区': [63.6467,12.0899],
-            '泰东村': [101.3865,27.1465],
-            '洪泾村': [103.0865,29.7465],
-            '半泾村': [105.7865,23.8465],
-            '中荷村': [114.5107,21.6196],
-            '胜利村': [125.9046,26.0633],
-            '松南村': [132.4046,30.0633],
-            '涂松村': [123.2229,34.4409],
-            '印北村': [111.6229,32.8409],
-            '凡山村': [123.5154,41.2584],
-            '岳星村': [146.5046,28.5633],
-            '太星村': [155.0046,32.5633],
-            '新建村': [156.9648,27.5891],
-            '岳王建成区': [151.0648,22.0891],
-            '岳镇村': [147.3648,18.5891],
-            '塘桥村': [139.3648,22.0891]
+            '直塘管理区': [63.6467,11.5899],
+            '泰东村': [85.0865,20.5465],
+            '洪泾村': [87.6865,25.0465],
+            '半泾村': [91.7865,14.8465],
+            '中荷村': [109.5107,10.7196],
+            '胜利村': [125.9046,18.0633],
+            '松南村': [137.3046,25.5633],
+            '涂松村': [120.2229,33.4409],
+            '印北村': [102.0229,29.5409],
+            '凡山村': [123.0154,44.0584],
+            '岳星村': [161.5046,22.5633],
+            '太星村': [174.7046,29.3633],
+            '新建村': [178.9648,20.9891],
+            '岳王管理区': [170.2648,12.0891],
+            '岳镇村': [163.3648,5.0891],
+            '塘桥村': [149.0648,12.0891]
         };
         var SXData = [     /*终点圆圈大小*/
             [{name:'沙溪建成区'}, {name:'香塘村',value:95}],
             [{name:'沙溪建成区'}, {name:'渠泾村',value:95}],
-            [{name:'沙溪建成区'}, {name:'归庄建成区',value:95}],
+            [{name:'沙溪建成区'}, {name:'归庄管理区',value:95}],
             [{name:'沙溪建成区'}, {name:'庄西村',value:95}],
             [{name:'沙溪建成区'}, {name:'项桥村',value:95}],
             [{name:'沙溪建成区'}, {name:'虹桥村',value:95}],
             [{name:'沙溪建成区'}, {name:'泰西村',value:50}],
             [{name:'沙溪建成区'}, {name:'泥桥村',value:50}],
-            [{name:'沙溪建成区'}, {name:'直塘建成区',value:50}],
+            [{name:'沙溪建成区'}, {name:'直塘管理区',value:50}],
             [{name:'沙溪建成区'}, {name:'泰东村',value:50}],
             [{name:'沙溪建成区'}, {name:'洪泾村',value:50}],
             [{name:'沙溪建成区'}, {name:'半泾村',value:50}],
@@ -306,7 +306,7 @@
             [{name:'沙溪建成区'}, {name:'岳星村',value:40}],
             [{name:'沙溪建成区'}, {name:'太星村',value:40}],
             [{name:'沙溪建成区'}, {name:'新建村',value:95}],
-            [{name:'沙溪建成区'}, {name:'岳王建成区',value:95}],
+            [{name:'沙溪建成区'}, {name:'岳王管理区',value:95}],
             [{name:'沙溪建成区'}, {name:'岳镇村',value:95}],
             [{name:'沙溪建成区'}, {name:'塘桥村',value:95}]
         ];
@@ -473,12 +473,9 @@
         /*数字加逗号*/
         leftSpan.html(parseFloat(leftSpan.html()).toLocaleString());
         rightSpan.html(parseFloat(rightSpan.html()).toLocaleString());
-        $.each(tds,function (i,item) {
-            $(this).text(parseFloat($(this).text()).toLocaleString());
-        });
         handleNum.html(parseFloat(handleNum.html()).toLocaleString());
         /*滚动办件动态*/
-        setInterval('autoScroll(".marquee")',3000);
+        // setInterval('autoScroll(".marquee")',3000);
     });
     function autoScroll(obj){
         $(obj).find("ul").animate({
